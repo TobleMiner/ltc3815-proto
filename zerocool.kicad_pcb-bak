@@ -1,14 +1,14 @@
 (kicad_pcb (version 4) (host pcbnew 4.0.7)
 
   (general
-    (links 386)
-    (no_connects 12)
+    (links 385)
+    (no_connects 6)
     (area 14.924999 14.924999 65.075001 51.275001)
     (thickness 1.6)
     (drawings 16)
     (tracks 336)
     (zones 0)
-    (modules 305)
+    (modules 310)
     (nets 36)
   )
 
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 0.2286)
+    (last_trace_width 1.5)
     (user_trace_width 0.2286)
     (user_trace_width 0.3)
     (user_trace_width 0.35)
@@ -67,15 +67,15 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 0.6 0.6)
-    (pad_drill 0.3)
+    (pad_size 0.7 0.2)
+    (pad_drill 0)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (grid_origin 0 -0.038)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
-      (usegerberextensions false)
+      (layerselection 0x010f0_80000001)
+      (usegerberextensions true)
       (excludeedgelayer true)
       (linewidth 0.100000)
       (plotframeref false)
@@ -95,9 +95,9 @@
       (subtractmaskfromsilk false)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory fab/))
   )
 
   (net 0 "")
@@ -188,6 +188,66 @@
     (uvia_dia 0.3)
     (uvia_drill 0.1)
     (add_net /SW)
+  )
+
+  (module zerocool-tec:VIA_0.6 (layer F.Cu) (tedit 5A107423) (tstamp 5A10B6E8)
+    (at 35.314 34.144)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA_0.6 (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND))
+  )
+
+  (module zerocool-tec:VIA_0.6 (layer F.Cu) (tedit 5A107423) (tstamp 5A10B6E4)
+    (at 37.854 34.2075)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA_0.6 (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND))
+  )
+
+  (module zerocool-tec:VIA_0.6 (layer F.Cu) (tedit 5A107423) (tstamp 5A10B6E0)
+    (at 39.124 34.2075)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA_0.6 (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND))
+  )
+
+  (module zerocool-tec:VIA_0.6 (layer F.Cu) (tedit 5A107423) (tstamp 5A10B6DC)
+    (at 36.584 34.2075)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA_0.6 (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND))
+  )
+
+  (module zerocool-tec:VIA_0.6 (layer F.Cu) (tedit 5A107423) (tstamp 5A10B6D8)
+    (at 40.394 34.2075)
+    (fp_text reference REF** (at 0 0.5) (layer F.SilkS) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (fp_text value VIA_0.6 (at 0 -0.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.15)))
+    )
+    (pad "" thru_hole circle (at 0 0) (size 0.6 0.6) (drill 0.3) (layers *.Cu)
+      (net 2 GND))
   )
 
   (module zerocool-tec:VIA_0.5 (layer F.Cu) (tedit 5A1075A6) (tstamp 5A1086BC)
@@ -3766,7 +3826,7 @@
       (net 12 +1V8))
   )
 
-  (module Housings_DFN_QFN:QFN-38-1EP_4x6mm_Pitch0.4mm (layer F.Cu) (tedit 5A0F6078) (tstamp 5A0F1E21)
+  (module Housings_DFN_QFN:QFN-38-1EP_4x6mm_Pitch0.4mm (layer F.Cu) (tedit 5A109704) (tstamp 5A0F1E21)
     (at 45.6565 33.1216)
     (descr "UFE Package; 38-Lead Plastic QFN (4mm x 6mm); (see Linear Technology QFN_38_05-08-1750.pdf)")
     (tags "QFN 0.4")
@@ -3816,7 +3876,8 @@
       (net 35 /SW))
     (pad 11 smd rect (at -1.9 1.8) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
       (net 35 /SW))
-    (pad 12 smd rect (at -1.9 2.2) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask))
+    (pad 12 smd rect (at -1.9 2.2) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
+      (net 35 /SW))
     (pad 13 smd rect (at -1.2 2.9 90) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
       (net 35 /SW))
     (pad 14 smd rect (at -0.8 2.9 90) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
@@ -3831,7 +3892,8 @@
       (net 35 /SW))
     (pad 19 smd rect (at 1.2 2.9 90) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
       (net 35 /SW))
-    (pad 20 smd rect (at 1.9 2.2) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask))
+    (pad 20 smd rect (at 1.9 2.2) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
+      (net 35 /SW))
     (pad 21 smd rect (at 1.9 1.8) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
       (net 35 /SW))
     (pad 22 smd rect (at 1.9 1.4) (size 0.7 0.2) (layers F.Cu F.Paste F.Mask)
@@ -5252,9 +5314,9 @@
   (gr_line (start 65 15) (end 65 51.2) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 15 15) (end 65 15) (layer Edge.Cuts) (width 0.15))
 
-  (segment (start 48.709378 39.650557) (end 48.970547 39.389388) (width 0.3) (layer F.Cu) (net 1))
-  (segment (start 48.970547 39.389388) (end 48.970547 36.17078) (width 0.3) (layer F.Cu) (net 1))
-  (segment (start 48.970547 36.17078) (end 50.319195 34.822132) (width 0.3) (layer F.Cu) (net 1))
+  (segment (start 48.709378 39.650557) (end 48.940484 39.419451) (width 0.3) (layer F.Cu) (net 1))
+  (segment (start 48.940484 39.419451) (end 48.940484 36.200843) (width 0.3) (layer F.Cu) (net 1))
+  (segment (start 48.940484 36.200843) (end 50.319195 34.822132) (width 0.3) (layer F.Cu) (net 1))
   (segment (start 50.319195 34.822132) (end 52.91064 34.822132) (width 0.3) (layer F.Cu) (net 1))
   (segment (start 57.4676 24.0284) (end 57.9012 23.5948) (width 0.5) (layer F.Cu) (net 2))
   (segment (start 57.9012 23.5948) (end 57.9012 21.298) (width 0.5) (layer F.Cu) (net 2))
@@ -5618,15 +5680,12 @@
     (filled_polygon
       (pts
         (xy 47.5565 34.126) (xy 48.4505 34.126) (xy 48.4505 38.875082) (xy 42.9895 38.887217) (xy 42.9895 34.5153)
-        (xy 43.7565 34.5153) (xy 43.800876 34.506473) (xy 44.046627 34.506473) (xy 44.046627 34.936727) (xy 43.4065 34.936727)
-        (xy 43.302961 34.956209) (xy 43.207866 35.017401) (xy 43.144071 35.110768) (xy 43.121627 35.2216) (xy 43.121627 35.4216)
-        (xy 43.141109 35.525139) (xy 43.202301 35.620234) (xy 43.295668 35.684029) (xy 43.4065 35.706473) (xy 44.084515 35.706473)
-        (xy 44.107447 35.740035) (xy 44.149841 35.767315) (xy 44.196 35.776) (xy 44.831 35.776) (xy 44.831 37.3)
-        (xy 44.841006 37.34941) (xy 44.869447 37.391035) (xy 44.911841 37.418315) (xy 44.958 37.427) (xy 46.355 37.427)
-        (xy 46.40441 37.416994) (xy 46.446035 37.388553) (xy 46.473315 37.346159) (xy 46.482 37.3) (xy 46.482 35.776)
-        (xy 47.117 35.776) (xy 47.16641 35.765994) (xy 47.208035 35.737553) (xy 47.228035 35.706473) (xy 47.9065 35.706473)
-        (xy 48.010039 35.686991) (xy 48.105134 35.625799) (xy 48.168929 35.532432) (xy 48.191373 35.4216) (xy 48.191373 35.2216)
-        (xy 48.171891 35.118061) (xy 48.110699 35.022966) (xy 48.017332 34.959171) (xy 47.9065 34.936727) (xy 47.266373 34.936727)
+        (xy 43.7565 34.5153) (xy 43.800876 34.506473) (xy 44.046627 34.506473) (xy 44.046627 35.4466) (xy 44.066109 35.550139)
+        (xy 44.069 35.554632) (xy 44.069 35.649) (xy 44.079006 35.69841) (xy 44.107447 35.740035) (xy 44.149841 35.767315)
+        (xy 44.196 35.776) (xy 44.831 35.776) (xy 44.831 37.3) (xy 44.841006 37.34941) (xy 44.869447 37.391035)
+        (xy 44.911841 37.418315) (xy 44.958 37.427) (xy 46.355 37.427) (xy 46.40441 37.416994) (xy 46.446035 37.388553)
+        (xy 46.473315 37.346159) (xy 46.482 37.3) (xy 46.482 35.776) (xy 47.117 35.776) (xy 47.16641 35.765994)
+        (xy 47.208035 35.737553) (xy 47.235315 35.695159) (xy 47.244 35.649) (xy 47.244 35.557081) (xy 47.266373 35.4466)
         (xy 47.266373 34.125) (xy 47.551473 34.125)
       )
     )
@@ -5894,8 +5953,8 @@
     )
     (filled_polygon
       (pts
-        (xy 58.2295 39.9034) (xy 49.3395 39.9034) (xy 49.3395 39.59526) (xy 49.367261 39.553712) (xy 49.380684 39.486232)
-        (xy 49.399948 39.389388) (xy 49.399947 39.389383) (xy 49.399947 36.348644) (xy 49.401191 36.3474) (xy 58.2295 36.3474)
+        (xy 58.2295 39.9034) (xy 49.3395 39.9034) (xy 49.3395 39.572203) (xy 49.369884 39.419451) (xy 49.369884 36.378707)
+        (xy 49.401191 36.3474) (xy 58.2295 36.3474)
       )
     )
   )
